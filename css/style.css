@@ -24,4 +24,54 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   color: #2F3035;
+  font-family: sans-serif;
 }
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header__top-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 122px;
+}
+
+.menu__item {
+  display: inline-block;
+}
+
+.menu__item + .menu__item {
+  padding-left: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
