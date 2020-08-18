@@ -14,6 +14,10 @@ $(function(){
 
     $(this).addClass('tab--active');
     $($(this).attr('href')).addClass('tabs-content--active');
-  })
+  });
+
+  $('.products-item__favorite').on('click', function () {
+    $('.products-item__favorite').toggleClass('products-item__favorite--active')
+  });
 
 });
