@@ -20,6 +20,10 @@ $(function(){
     $('.products-item__favorite').toggleClass('products-item__favorite--active')
   });
 
-  $('.products__slider').slick({});
+  $('.products-slider').slick({
+    slidesToShow: 4,
+    prevArrow: '<button class="products-slider__slider-btn products-slider__slider-btnprev"><img src="images/arrow-black-left.svg" alt=""></button>',
+    nextArrow: '<button class="products-slider__slider-btn products-slider__slider-btnnext"><img src="images/arrow-black-right.svg" alt=""></button>'
+  });
 
 });

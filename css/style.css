@@ -164,7 +164,8 @@ body {
   max-width: 870px;
 }
 
-.banner-section__slider-btn {
+.banner-section__slider-btn,
+.products-slider__slider-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -603,7 +604,13 @@ body {
   border-bottom: 2px solid #1C62CD;
 }
 
+.products-slider__slider-btnprev {
+  left: -20px;
+}
 
+.products-slider__slider-btnnext {
+  right: -20px;
+}
 
 
 
