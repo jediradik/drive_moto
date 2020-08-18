@@ -326,7 +326,7 @@ body {
   padding: 11px 26px 12px;
 }
 
-.search__tabs-item--active {
+.search__tabs-item.tab--active {
   border-radius: 5px;
   background-color: #F0F0F4;
   font-weight: 700;
@@ -336,7 +336,7 @@ body {
   display: none;
 }
 
-.search__content-item--active {
+.search__content-item.tabs-content--active {
   display: block;
 }
 
@@ -429,6 +429,10 @@ body {
 .categories__item-text::after {
   content: url("../images/link-arrow.svg");
   padding-left: 2px;
+}
+
+.products-item {
+
 }
 
 
