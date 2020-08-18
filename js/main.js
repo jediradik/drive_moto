@@ -20,4 +20,6 @@ $(function(){
     $('.products-item__favorite').toggleClass('products-item__favorite--active')
   });
 
+  $('.products__slider').slick({});
+
 });

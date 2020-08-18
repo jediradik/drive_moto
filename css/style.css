@@ -332,11 +332,11 @@ body {
   font-weight: 700;
 }
 
-.search__content-item {
+.tabs-content {
   display: none;
 }
 
-.search__content-item.tabs-content--active {
+.tabs-content.tabs-content--active {
   display: block;
 }
 
@@ -577,6 +577,30 @@ body {
 
 .products-item__wrapper.products-item__not-available .products-item__notify-link span {
   border-bottom: 1px solid #1C62CD;
+}
+
+.products__title {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 25px;
+}
+
+.products__tabs {
+  margin-bottom: 25px;
+}
+
+.products__tab {
+  padding-bottom: 10px;
+}
+
+.products__tab + .products__tab {
+  margin-left: 50px;
+}
+
+.products__tab.tab--active {
+  border-bottom: 2px solid #1C62CD;
 }
 
 
