@@ -17,7 +17,7 @@ $(function(){
   });
 
   $('.products-item__favorite').on('click', function () {
-    $('.products-item__favorite').toggleClass('products-item__favorite--active')
+    $(this).toggleClass('products-item__favorite--active')
   });
 
   $('.products-slider').slick({
