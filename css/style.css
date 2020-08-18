@@ -617,9 +617,13 @@ body {
   display: inline;
 }
 
+.products {
+  margin-bottom: 80px;
+}
+
 .products__more {
   text-align: center;
-  margin: 35px 0 80px;
+  margin: 35px 0 0;
 }
 
 .products__more-link {
