@@ -431,16 +431,18 @@ body {
   padding-left: 2px;
 }
 
-.product-item__wrapper {
+.products-item__wrapper {
   position: relative;
   width: 271px;
 }
 
 .products-item {
+  min-height: 400px;
   border: 1px solid #CDCDCD;
   border-radius: 3px;
   text-align: center;
   padding: 52px 20px 31px;
+  transition: all .3s;
 }
 
 .products-item__title {
@@ -495,10 +497,87 @@ body {
 }
 
 .products-item__hover-text {
-
+  padding: 18px 21px;
+  background-color: rgba(255, 255, 255, .9);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  display: inline-block;
+  position: absolute;
+  top: 30%;
+  opacity: 0;
+  transition: all .3s;
 }
 
+.products-item:hover {
+  box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+  color: #1C62CD;
+}
 
+.products-item:hover .products-item__hover-text {
+  opacity: 1;
+  color: #2F3035;
+}
+
+.products-item:hover .products-item__notify-text {
+  color: #2F3035;
+}
+
+.products-item--sale::before {
+  content: "SALE";
+  padding: 8px 15px;
+  background-color: #1C62CD;
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.07em;
+}
+
+.products-item__wrapper.products-item__not-available .products-item__price {
+  display: none;
+}
+
+.products-item__notify-text {
+  display: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.products-item__wrapper.products-item__not-available .products-item__notify-text {
+  display: block;
+}
+
+.products-item__wrapper.products-item__not-available .products-item__basket {
+  display: none;
+}
+
+.products-item__notify-link {
+  display: none;
+}
+
+.products-item__wrapper.products-item__not-available .products-item__title {
+  padding-bottom: 13px;
+}
+
+.products-item__wrapper.products-item__not-available .products-item__notify-link {
+  display: block;
+  position: absolute;
+  text-align: center;
+  font-size: 16px;
+  line-height: 19px;
+  color: #1C62CD;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+}
+
+.products-item__wrapper.products-item__not-available .products-item__notify-link span {
+  border-bottom: 1px solid #1C62CD;
+}
 
 
 
