@@ -395,12 +395,12 @@ body {
   justify-content: space-between;
 }
 
-.categorie__item-img {
+.categories__item-img {
   width: 50%;
   text-align: center;
 }
 
-.categorie__item-img img {
+.categories__item-img img {
   max-width: 100%;
 }
 
