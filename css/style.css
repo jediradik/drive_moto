@@ -860,7 +860,11 @@ button.catalog__filter-btnline {
 
 .pagination__list-item a {
   display: block;
+}
 
+.aside-filter__tabs {
+  display: flex;
+  justify-content: space-between;
 }
 
 
