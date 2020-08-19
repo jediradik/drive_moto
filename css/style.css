@@ -889,6 +889,63 @@ button.catalog__filter-btnline {
   padding-bottom: 7px;
 }
 
+.aside-filter__item-drop {
+  margin: 40px 0;
+}
+
+.aside-filter__item-title {
+  font-family: 'SFProDisplay-Semibold', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  padding-left: 26px;
+}
+
+.filter__item-drop {
+  margin-bottom: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.filter__item-drop::before {
+  content: "";
+  position: absolute;
+  background-image: url('../images/arrow-down.svg');
+  left: 0;
+  bottom: 5px;
+  width: 12px;
+  height: 8px;
+  transform: rotate(0deg);
+}
+
+.filter__item-drop--active::before {
+  transform: rotate(180deg);
+}
+
+.aside-filter__content {
+  display: flex;
+}
+
+.aside-filter__content-box {
+  width: 50%;
+}
+
+.aside-filter__content-label {
+  font-size: 14px;
+  line-height: 17px;
+  cursor: pointer;
+}
+
+.jq-checkbox, .jq-radio {
+  background: #fff;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #C4C4C4;
+  border-radius: 1px;
+  box-shadow: none;
+  vertical-align: -2px;
+}
+
 
 
 
