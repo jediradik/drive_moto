@@ -740,17 +740,26 @@ body {
   padding-right: 16px;
   margin-right: 10px;
   position: relative;
+  font-size: 15px;
+  line-height: 18px;
+  color: #C4C4C4;
 }
 
 .breadcrumbs__list-item::after {
   content: "";
   position: absolute;
   right: 0;
-  bottom: 6px;
+  bottom: 4px;
   background-image: url('../images/link-arrow.svg');
   width: 6px;
   height: 10px;
 }
+
+.breadcrumbs__list-item:last-child::after {
+  display: none;
+}
+
+
 
 
 
