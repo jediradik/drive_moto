@@ -1165,7 +1165,13 @@ button.catalog__filter-btnline {
   color: #BDBEC2;
 }
 
+.btn-checked .aside-filter__content {
+  flex-wrap: nowrap;
+}
 
+.btn-checked .aside-filter__content-box {
+  width: auto;
+}
 
 
 
