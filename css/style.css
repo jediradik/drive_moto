@@ -994,7 +994,7 @@ button.catalog__filter-btnline {
   font-family: 'Barlow', sans-serif;
   font-size: 14px;
   line-height: 17px;
-  color: #2F3035;
+  color: #2f3035;
   text-shadow: none;
   background-color: transparent;
   border-radius: 0;
@@ -1008,7 +1008,7 @@ button.catalog__filter-btnline {
   position: absolute;
   font-size: 14px;
   line-height: 17px;
-  color: #C4C4C4;
+  color: #c4c4c4;
   left: 0;
 }
 
@@ -1023,7 +1023,7 @@ button.catalog__filter-btnline {
 .irs--flat .irs-line {
   top: 25px;
   height: 1px;
-  background-color: #E0E0E0;
+  background-color: #e0e0e0;
   border-radius: 0;
 }
 
@@ -1037,7 +1037,7 @@ button.catalog__filter-btnline {
   top: 22px;
   width: 8px;
   height: 8px;
-  background-color: #1C62CD;
+  background-color: #1c62cd;
   border-radius: 50%;
 }
 
@@ -1047,7 +1047,92 @@ button.catalog__filter-btnline {
 }
 
 .aside-filter__item-list {
+  margin: 46px 0 40px;
+}
 
+.filter__item-list {
+  padding-top: 34px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #C4C4C4;
+}
+
+.filter__item-listtitle {
+  font-family: 'SFProDisplay-Semibold', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  padding-bottom: 14px;
+  padding-left: 26px;
+}
+
+.filter__item-listselect {
+  font-family: 'Barlow', sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  color: #48494D;
+}
+
+.jq-selectbox__select {
+  font-family: 'Barlow', sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  color: #48494D;
+  height: 20px;
+  padding: 0 25px 0 10px;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  text-shadow: none;
+  border: none;
+}
+
+.jq-selectbox__trigger-arrow {
+  position: absolute;
+  top: 14px;
+  right: 12px;
+  width: 0;
+  height: 0;
+  border: none;
+}
+
+.jq-selectbox__trigger {
+  position: absolute;
+  background-image: url('../images/arrow-down.svg');
+  width: 12px;
+  height: 8px;
+  border-left: none;
+  top: 6px;
+  right: 9px;
+}
+
+.jq-selectbox__select:hover,
+.jq-selectbox__select:active {
+  background: transparent;
+  box-shadow: none;
+}
+
+.jq-selectbox.focused .jq-selectbox__select {
+  border: none;
+}
+
+.jq-selectbox li:hover {
+  background: rgba(107, 126, 172, 0.05);
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.jq-selectbox li.selected {
+  background: rgba(107, 126, 172, 0.05);
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.jq-selectbox li {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.jq-selectbox__dropdown {
+  border-radius: 0;
+  padding-top: 15px;
 }
 
 
