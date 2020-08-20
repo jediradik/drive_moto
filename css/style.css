@@ -978,15 +978,74 @@ button.catalog__filter-btnline {
 
 .irs--flat {
   width: 100%;
+  margin-top: -15px;
 }
 
 .irs--flat.irs-with-grid {
   width: 100%;
 }
 
-.irs--flat .irs-from {
+.irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single {
   display: none;
 }
+
+.irs--flat .irs-min, .irs--flat .irs-max {
+  top: 55px;
+  font-family: 'Barlow', sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  color: #2F3035;
+  text-shadow: none;
+  background-color: transparent;
+  border-radius: 0;
+  text-decoration-line: underline;
+  visibility: visible !important;
+  padding-left: 27px;
+}
+
+.irs-min::before,
+.irs-max::before {
+  position: absolute;
+  font-size: 14px;
+  line-height: 17px;
+  color: #C4C4C4;
+  left: 0;
+}
+
+.irs-min::before {
+  content: "от";
+}
+
+.irs-max::before {
+  content: "до";
+}
+
+.irs--flat .irs-line {
+  top: 25px;
+  height: 1px;
+  background-color: #E0E0E0;
+  border-radius: 0;
+}
+
+.irs--flat .irs-bar {
+  top: 25px;
+  height: 3px;
+  background-color: #1C62CD;
+}
+
+.irs--flat .irs-handle {
+  top: 22px;
+  width: 8px;
+  height: 8px;
+  background-color: #1C62CD;
+  border-radius: 50%;
+}
+
+.irs--flat .irs-handle > i:first-child,
+.irs--flat .irs-handle.state_hover>i:first-child, .irs--flat .irs-handle:hover>i:first-child {
+  background: transparent;
+}
+
 
 
 
