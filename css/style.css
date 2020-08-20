@@ -924,11 +924,12 @@ button.catalog__filter-btnline {
 .aside-filter__content {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .aside-filter__content-box {
   width: 50%;
+  margin-bottom: 10px;
 }
 
 .aside-filter__content-label {
@@ -1133,6 +1134,35 @@ button.catalog__filter-btnline {
 .jq-selectbox__dropdown {
   border-radius: 0;
   padding-top: 15px;
+}
+
+.filter-more {
+  width: 100%;
+}
+
+.filter-more__btn {
+  font-size: 14px;
+  line-height: 17px;
+  color: #1C62CD;
+  border: none;
+  border-bottom: 1px solid #1C62CD;
+  background-color: transparent;
+  padding: 0;
+}
+
+.filter-search {
+  width: 100%;
+  border: 1px solid #E0E0E0;
+  height: 30px;
+  padding: 0 20px;
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-search::placeholder {
+  color: #BDBEC2;
 }
 
 
