@@ -902,7 +902,6 @@ button.catalog__filter-btnline {
 }
 
 .filter__item-drop {
-  margin-bottom: 20px;
   position: relative;
   cursor: pointer;
 }
@@ -925,6 +924,7 @@ button.catalog__filter-btnline {
 .aside-filter__content {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .aside-filter__content-box {
@@ -974,6 +974,18 @@ button.catalog__filter-btnline {
 
 .aside-filter__content.aside-filter__content-radio {
   flex-wrap: nowrap;
+}
+
+.irs--flat {
+  width: 100%;
+}
+
+.irs--flat.irs-with-grid {
+  width: 100%;
+}
+
+.irs--flat .irs-from {
+  display: none;
 }
 
 
