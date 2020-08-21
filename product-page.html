@@ -191,7 +191,7 @@
   <section class="card__tabs">
     <div class="container">
       <div class="tabs-wrapper">
-        <div class="tabs">
+        <div class="tabs card__tab-box">
           <a href="#product-card__tab-1" class="tab card__tab">О товаре</a>
           <a href="#product-card__tab-2" class="tab card__tab">Характеристики</a>
           <a href="#product-card__tab-3" class="tab card__tab">Отзывы</a>
@@ -213,49 +213,69 @@
                 </label>
 
                 <label class="card__label-pickup">
-                  <input type="radio">
+                  <input class="filter-style" type="radio" name="pickup">
                   Забрать сегодня
                 </label>
                 <label class="card__label-pickup">
-                  <input type="radio">
+                  <input class="filter-style" type="radio" name="pickup" checked>
                   Забрать в течение недели
                 </label>
               </div>
               <ul class="card__list">
                 <li class="card__list-item">
-                  <div class="card__list-addresstitle"></div>
-                  <div class="card__list-workhourstitle"></div>
-                  <div class="card__list-avialabletitle"></div>
-                  <div class="card__list-numtitle"></div>
-                  <div class="card__list-btntitle"></div>
+                  <div class="card__list-address card__list-addresstitle">Адрес</div>
+                  <div class="card__list-workhours card__list-workhourstitle">Режим работы</div>
+                  <div class="card__list-avialable card__list-avialabletitle">Доступно</div>
+                  <div class="card__list-num card__list-numtitle">Количество</div>
+                  <div class="card__list-btn card__list-btntitle"></div>
                 </li>
                 <li class="card__list-item">
-                  <div class="card__list-address"></div>
-                  <div class="card__list-workhours"></div>
-                  <div class="card__list-avialable"></div>
-                  <div class="card__list-num"></div>
-                  <div class="card__list-btn"></div>
+                  <div class="card__list-address">Москва, ул. Науки 25</div>
+                  <div class="card__list-workhours">
+                    <span>пн-сб: 08:00-19:00</span>
+                    <span>вс: 09:00-17:00</span>
+                  </div>
+                  <div class="card__list-avialable">В наличии</div>
+                  <div class="card__list-num">1</div>
+                  <div class="card__list-btn">
+                    <button type="submit">КУПИТЬ</button>
+                  </div>
                 </li>
                 <li class="card__list-item">
-                  <div class="card__list-address"></div>
-                  <div class="card__list-workhours"></div>
-                  <div class="card__list-avialable"></div>
-                  <div class="card__list-num"></div>
-                  <div class="card__list-btn"></div>
+                  <div class="card__list-address">Москва, ул.  Южная 134</div>
+                  <div class="card__list-workhours">
+                    <span>пн-сб: 08:00-19:00</span>
+                    <span>вс: 09:00-17:00</span>
+                  </div>
+                  <div class="card__list-avialable">В наличии</div>
+                  <div class="card__list-num">2</div>
+                  <div class="card__list-btn">
+                    <button type="submit">КУПИТЬ</button>
+                  </div>
                 </li>
                 <li class="card__list-item">
-                  <div class="card__list-address"></div>
-                  <div class="card__list-workhours"></div>
-                  <div class="card__list-avialable"></div>
-                  <div class="card__list-num"></div>
-                  <div class="card__list-btn"></div>
+                  <div class="card__list-address">Санкт-Петербург, ул. Красная 19</div>
+                  <div class="card__list-workhours">
+                    <span>пн-сб: 08:00-19:00</span>
+                    <span>вс: 09:00-17:00</span>
+                  </div>
+                  <div class="card__list-avialable">Нет в наличии</div>
+                  <div class="card__list-num">0</div>
+                  <div class="card__list-btn">
+                    <button type="submit">КУПИТЬ</button>
+                  </div>
                 </li>
                 <li class="card__list-item">
-                  <div class="card__list-address"></div>
-                  <div class="card__list-workhours"></div>
-                  <div class="card__list-avialable"></div>
-                  <div class="card__list-num"></div>
-                  <div class="card__list-btn"></div>
+                  <div class="card__list-address">Киев, ул Шевченко 167</div>
+                  <div class="card__list-workhours">
+                    <span>пн-сб: 08:00-19:00</span>
+                    <span>вс: 09:00-17:00</span>
+                  </div>
+                  <div class="card__list-avialable">Нет в наличии</div>
+                  <div class="card__list-num">0</div>
+                  <div class="card__list-btn">
+                    <button type="submit">КУПИТЬ</button>
+                  </div>
                 </li>
               </ul>
             </form>
