@@ -1214,9 +1214,65 @@ button.catalog__filter-btnline {
   display: none;
 }
 
+.filter-btn__send {
+  padding: 16px 85px;
+  background: #F0F0F4;
+  border: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.12em;
+  color: #BDBEC2;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
 
+.filter-btn__send--active {
+  background: #1C62CD;
+  color: #fff;
+}
 
+.aside-filter__item-btn {
+  text-align: center;
+}
 
+.filter__extra {
+  position: relative;
+  font-size: 13px;
+  line-height: 16px;
+  padding-right: 29px;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.filter__extra::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  background-image: url('../images/arrow-down.svg');
+  width: 12px;
+  height: 8px;
+  top: 4px;
+}
+
+.filter__extra-content {
+  display: none;
+}
+
+.filter__extra.filter__item-drop--active::after {
+  transform: rotate(180deg);
+}
+
+.filter-btn__reset {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  font-size: 13px;
+  line-height: 16px;
+  color: #C4C4C4;
+  border-bottom: 1px solid #c4c4c4;
+}
 
 
 
