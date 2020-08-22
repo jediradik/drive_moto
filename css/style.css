@@ -250,6 +250,10 @@ body {
   background-color: transparent;
 }
 
+.slick-dots .slick-active button {
+  background-color: #fff;
+}
+
 .slick-active li button {
   background-color: #fff;
 }
@@ -1553,6 +1557,7 @@ button.catalog__filter-btnline {
   width: 220px;
   margin-right: 80px;
 }
+
 .card__list-workhours {
   width: 157px;
   margin-right: 96px;
@@ -1567,12 +1572,15 @@ button.catalog__filter-btnline {
   width: 140px;
   margin-right: 60px;
 }
+
 .card__list-num {
   width: 104px;
 }
+
 .card__list-btn {
   margin-left: auto;
 }
+
 .card__list-btn button {
   font-size: 13px;
   line-height: 16px;
@@ -1583,6 +1591,18 @@ button.catalog__filter-btnline {
   border-radius: 3px;
   text-transform: uppercase;
   padding: 9px 40px;
+}
+
+.products-slider .slick-dots {
+  bottom: -30px;
+}
+
+.products-slider .slick-dots button {
+  background-color: #c4c4c4;
+}
+
+.products-slider .slick-dots .slick-active button {
+  background-color: #1C62CD;
 }
 
 

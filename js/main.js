@@ -31,7 +31,40 @@ $(function(){
   $('.products-slider').slick({
     slidesToShow: 4,
     prevArrow: '<button class="products-slider__slider-btn products-slider__slider-btnprev"><img src="images/arrow-black-left.svg" alt=""></button>',
-    nextArrow: '<button class="products-slider__slider-btn products-slider__slider-btnnext"><img src="images/arrow-black-right.svg" alt=""></button>'
+    nextArrow: '<button class="products-slider__slider-btn products-slider__slider-btnnext"><img src="images/arrow-black-right.svg" alt=""></button>',
+    responsive: [
+      {
+        breakpoint: 1301,
+        settings: {
+          arrows: false,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 1201,
+        settings: {
+          slidesToShow: 3,
+          dots: true,
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 870,
+        settings: {
+          slidesToShow: 2,
+          dots: true,
+          arrows: false
+        }
+      },
+      {
+        breakpoint: 590,
+        settings: {
+          slidesToShow: 1,
+          dots: true,
+          arrows: false
+        }
+      }
+    ]
   });
 
   $('.filter-style').styler();
