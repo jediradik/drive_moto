@@ -292,6 +292,9 @@ body {
 .sale-item__price {
   text-align: right;
 }
+.aside__btn {
+  display: none;
+}
 
 .sale-item__price-new {
   font-weight: 700;

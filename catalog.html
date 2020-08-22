@@ -218,11 +218,13 @@
         Гидроциклы
       </h2>
       <div class="catalog__filter">
-        <div class="catalog__filter-items">
+        <div class="catalog__filter-itemsinner">
+          <div class="catalog__filter-items mobile-overflow">
           <button>Полноприводные</button>
           <button>от 5000</button>
           <button>BRP</button>
           <button>еще</button>
+        </div>
         </div>
         <div class="catalog__filter-btn">
           <select class="filter-style select-item">
@@ -254,11 +256,14 @@
         </div>
       </div>
       <div class="catalog__inner">
+        <div class="aside__btn">
+          Filter
+        </div>
         <aside class="catalog__inner-aside aside-filter">
-          <div class="tabs-wrapper">
+          <div class="tabs-wrapper tabs-wrapper--no-scroll">
             <div class="tabs aside-filter__tabs">
               <a href="#" class="tab aside-filter__tab tab--active"><span>Параметры</span></a>
-              <a href="#" class="tab aside-filter__tab"><span>по марке</span></a>
+              <a href="#aside-filter__tabs-content--2" class="tab aside-filter__tab"><span>по марке</span></a>
             </div>
             <div class="tabs-container">
               <div class="tabs-content aside-filter__tabs-content tabs-content--active">
@@ -484,7 +489,7 @@
                 </form>
 
               </div>
-              <div class="tabs-content aside-filter__tabs-content">content-2</div>
+              <div id="aside-filter__tabs-content--2" class="tabs-content aside-filter__tabs-content">content-2</div>
             </div>
           </div>
         </aside>

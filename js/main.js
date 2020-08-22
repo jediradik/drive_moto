@@ -107,4 +107,8 @@ $(function(){
     $(this).toggleClass('footer__top-drop--active');
   });
 
+  $('.aside__btn').on('click', function () {
+    $(this).next().slideToggle();
+  });
+
 });
