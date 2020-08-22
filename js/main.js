@@ -102,4 +102,9 @@ $(function(){
     $('.menu-mobile__list').toggleClass('menu-mobile__list--active');
   });
 
+  $('.footer__top-drop').on('click', function () {
+    $(this).next().slideToggle();
+    $(this).toggleClass('footer__top-drop--active');
+  });
+
 });
