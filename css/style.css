@@ -54,6 +54,10 @@ body {
   font-weight: 700;
 }
 
+.menu__btn {
+  display: none;
+}
+
 .menu__item {
   display: inline-block;
 }
@@ -81,6 +85,10 @@ body {
   height: 30px;
   left: 0;
   top: -10px;
+}
+
+.menu-mobile__list {
+
 }
 
 .user-list {
