@@ -94,6 +94,13 @@ body {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
   transform: translateX(-100%);
   transition: all .3s;
+  position: absolute;
+  z-index: 10;
+  background-color: #fff;
+}
+
+.menu-mobile__linewrapper {
+    display: none;
 }
 
 .menu-mobile__list--active {

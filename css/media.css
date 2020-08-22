@@ -14,12 +14,12 @@
   .menu__list {
     display: none;
   }
-
   .menu__btn {
     display: block;
     background-color: transparent;
     border: none;
     cursor: pointer;
+    padding: 0;
   }
   .menu__btn-line {
     background: #2F3035;
@@ -27,6 +27,19 @@
     width: 34px;
     height: 3px;
     margin: 8px 0;
+  }
+  .menu-mobile__linewrapper {
+    display: block;
+    font-family: 'SFProDisplay-Bold', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    background-color: #F0F0F4;
+    overflow-x: scroll;
+  }
+  .menu-mobile__line {
+    width: 450px;
+    padding: 14px 0 14px 15px;
   }
 }
 
