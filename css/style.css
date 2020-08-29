@@ -1608,6 +1608,10 @@ button.catalog__filter-btnline {
   background-color: #1C62CD;
 }
 
+.product-card__btn-mobile {
+  display: none;
+}
+
 
 
 
