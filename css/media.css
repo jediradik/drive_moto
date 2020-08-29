@@ -36,6 +36,9 @@
   .card__input-search {
     margin-right: 0;
   }
+  .button-search {
+    right: 15px;
+  }
 }
 
 @media (max-width: 968px) {
@@ -147,6 +150,10 @@
   }
   .card__list-itemtitle {
     display: none;
+  }
+  .button-search {
+    top: 10px;
+    left: 330px;
   }
 }
 
@@ -272,6 +279,9 @@
   .footer__top-drop--active::after {
     transform: rotate(180deg);
   }
+  .footer__top-drop {
+    pointer-events: auto;
+  }
 }
 
 @media (max-width: 440px) {
@@ -283,5 +293,13 @@
   }
   .pagination__list-item {
     margin: 0;
+  }
+  .card__input-search {
+    display: block;
+    margin-left: 0;
+  }
+  .button-search {
+    top: 30px;
+    left: 245px;
   }
 }
