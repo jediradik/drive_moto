@@ -95,6 +95,15 @@
   .tabs-wrapper.tabs-wrapper--no-scroll {
     overflow: hidden;
   }
+  .product-card__inner {
+    flex-wrap: wrap;
+  }
+  .product-card__tabs {
+    display: none;
+  }
+  .product-card__content {
+    order: 1;
+  }
 }
 
 @media (max-width: 940px) {
