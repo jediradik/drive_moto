@@ -76,13 +76,65 @@ $(function(){
     $(this).next().slideToggle(200);
   });
 
-  $(".js-range-slider").ionRangeSlider({
-    type: "double",
-    min: 0,
-    max: 1600000,
-    from: 100000,
-    to: 500000,
-  });
+  var $range = $(".js-range-slider");
+    var $inputFrom = $(".js-input-from");
+    var $inputTo = $(".js-input-to");
+    var instance;
+    var min = 0;
+    var max = 1500000;
+    var from = 100000;
+    var to = 500000;
+
+    $(".js-range-slider").ionRangeSlider({
+        type: "double",
+        grid: false,
+        min: min,
+        max: max,
+        from: 100000,
+        to: 500000,
+        onStart: updateInputs,
+        onChange: updateInputs,
+    });
+
+    instance = $range.data("ionRangeSlider");
+
+    function updateInputs (data) {
+        from = data.from;
+        to = data.to;
+
+        $inputFrom.prop("value", from);
+        $inputTo.prop("value", to);
+    }
+
+    $inputFrom.on("input", function () {
+        var val = $(this).prop("value");
+
+        // validate
+        if (val < min) {
+            val = min;
+        } else if (val > to) {
+            val = to;
+        }
+
+        instance.update({
+            from: val
+        });
+    });
+
+    $inputTo.on("input", function () {
+        var val = $(this).prop("value");
+
+        // validate
+        if (val < from) {
+            val = from;
+        } else if (val > max) {
+            val = max;
+        }
+
+        instance.update({
+            to: val
+        });
+    });
 
   $('.catalog__filter-btngrid').on('click', function () {
     $(this).addClass('catalog__filter-button--active');
@@ -114,5 +166,6 @@ $(function(){
   $('.aside__btn').on('click', function () {
     $(this).next().slideToggle();
   });
+
 
 });

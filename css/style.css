@@ -1057,6 +1057,46 @@ button.catalog__filter-btnline {
   flex-wrap: nowrap;
 }
 
+.range-slider{
+  position: relative;
+  height: 80px;
+  width: 100%;
+}
+
+.extra-controls{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+}
+
+.js-input-to , .js-input-from{
+  padding: 0 0 0 12px;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration: underline;
+  color: #2F3035;
+  text-shadow: none;
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+  outline: none;
+  max-width: 65px;
+}
+
+
+.irs--flat .irs-min, .irs--flat .irs-max{
+  display: none;
+}
+
+.js-input-from-label,
+.js-input-to-label{
+  font-size: 14px;
+  line-height: 17px;
+  color: #C4C4C4;
+  text-decoration: none;
+}
+
 .irs--flat {
   width: 100%;
   margin-top: -15px;
@@ -1101,26 +1141,9 @@ button.catalog__filter-btnline {
   display: none;
 }
 
-.irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single {
-  top: 45px;
-  text-shadow: none;
-  padding: 1px 5px;
-  background-color: transparent;
-  border-radius: 4px;
-  position: absolute;
-  font-size: 14px;
-  line-height: 17px;
-  text-decoration-line: underline;
-  color: #2F3035;
+.irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single{
+  display: none;
 }
-
-/*.irs--flat .irs-from::before {
-  content: "от";
-}
-
-.irs--flat .irs-to::before {
-  content: "до";
-}*/
 
 .aside-filter__item-list {
   margin: 46px 0 40px;

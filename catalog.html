@@ -314,11 +314,24 @@
                   <li class="aside-filter__item-drop">
                     <p class="aside-filter__item-title filter__item-drop filter__item-drop--active">Цена</p>
                     <div class="aside-filter__content">
-                      <input type="text" class="js-range-slider" name="my_range" value=""
-                             data-from="100000"
-                             data-to="500000"
-                      />
-                    </div>
+                      <div class="range-slider">
+                        <input type="text" class="js-range-slider" name="my_range" value=""
+                        data-min="0"
+                        data-max="1500000"
+                        data-from="100000"
+                        data-to="500000"
+                        />
+                        <div class="extra-controls">
+                          <label class="js-input-from-label">
+                            от
+                            <input type="text" class="js-input-from" value="0" />
+                          </label>
+                          <label class="js-input-to-label">
+                            до
+                            <input type="text" class="js-input-to" value="0" />
+                          </label>
+                        </div>
+                      </div>
                   </li>
                   <li class="aside-filter__item-list">
                     <div class="filter__item-list">
