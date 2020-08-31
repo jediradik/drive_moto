@@ -1066,41 +1066,6 @@ button.catalog__filter-btnline {
   width: 100%;
 }
 
-.irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single {
-  display: none;
-}
-
-.irs--flat .irs-min, .irs--flat .irs-max {
-  top: 55px;
-  font-family: 'Barlow', sans-serif;
-  font-size: 14px;
-  line-height: 17px;
-  color: #2f3035;
-  text-shadow: none;
-  background-color: transparent;
-  border-radius: 0;
-  text-decoration-line: underline;
-  visibility: visible !important;
-  padding-left: 27px;
-}
-
-.irs-min::before,
-.irs-max::before {
-  position: absolute;
-  font-size: 14px;
-  line-height: 17px;
-  color: #c4c4c4;
-  left: 0;
-}
-
-.irs-min::before {
-  content: "от";
-}
-
-.irs-max::before {
-  content: "до";
-}
-
 .irs--flat .irs-line {
   top: 25px;
   height: 1px;
@@ -1126,6 +1091,36 @@ button.catalog__filter-btnline {
 .irs--flat .irs-handle.state_hover>i:first-child, .irs--flat .irs-handle:hover>i:first-child {
   background: transparent;
 }
+
+.irs--flat .irs-min, .irs--flat .irs-max {
+  display: none;
+}
+
+.irs--flat .irs-from::before,
+.irs--flat .irs-to::before {
+  display: none;
+}
+
+.irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single {
+  top: 45px;
+  text-shadow: none;
+  padding: 1px 5px;
+  background-color: transparent;
+  border-radius: 4px;
+  position: absolute;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration-line: underline;
+  color: #2F3035;
+}
+
+/*.irs--flat .irs-from::before {
+  content: "от";
+}
+
+.irs--flat .irs-to::before {
+  content: "до";
+}*/
 
 .aside-filter__item-list {
   margin: 46px 0 40px;

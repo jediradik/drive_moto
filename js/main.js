@@ -78,8 +78,10 @@ $(function(){
 
   $(".js-range-slider").ionRangeSlider({
     type: "double",
-    min: 100000,
-    max: 500000,
+    min: 0,
+    max: 1600000,
+    from: 100000,
+    to: 500000,
   });
 
   $('.catalog__filter-btngrid').on('click', function () {
