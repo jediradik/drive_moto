@@ -155,6 +155,9 @@
     top: 10px;
     left: 330px;
   }
+  .menu-mobile__list--active {
+  transform: translateX(0%);
+  }
 }
 
 @media (max-width: 640px) {
@@ -248,7 +251,16 @@
     justify-content: center;
   }
   .footer__list {
-    display: none;
+    height: 0;
+    overflow: hidden;
+  }
+  .footer__list {
+    height: 0;
+    overflow: hidden;
+  }
+  .footer__list.footer-list--active {
+    height: auto;
+    overflow: visible;
   }
   .footer__top-title.footer__top-drop {
     font-weight: 500;

@@ -103,9 +103,7 @@ body {
     display: none;
 }
 
-.menu-mobile__list--active {
-  transform: translateX(0%);
-}
+
 
 .menu-mobile__item {
   position: relative;
